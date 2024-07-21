@@ -5,10 +5,14 @@
   "scripts": {
     "build": "tsup",
     "dev": "bun --watch run src/app.ts",
+    "drizzle:studio": "drizzle-kit studio",
+    "drizzle:push": "drizzle-kit push",
+    "drizzle:migrate": "drizzle-kit migrate",
     "serve:node": "node dist/index.cjs"
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "drizzle-kit": "^0.23.0",
     "source-map-support": "^0.5.21",
     "tsup": "^8.2.1"
   },
@@ -17,11 +21,13 @@
   },
   "dependencies": {
     "@effect/schema": "^0.68.26",
+    "@effect/sql-sqlite-node": "^0.5.2",
     "@hono/node-server": "^1.12.0",
     "@types/bcrypt": "^5.0.2",
     "@types/jsonwebtoken": "^9.0.6",
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.32.0",
     "effect": "^3.5.6",
     "hono": "^4.5.0",
     "jsonwebtoken": "^9.0.2"
