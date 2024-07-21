@@ -6,8 +6,9 @@
     "build": "tsup",
     "dev": "bun --watch run src/app.ts",
     "drizzle:studio": "drizzle-kit studio",
-    "drizzle:push": "drizzle-kit push",
+    "drizzle:generate": "drizzle-kit generate",
     "drizzle:migrate": "drizzle-kit migrate",
+    "drizzle:push": "drizzle-kit push",
     "serve:node": "node dist/index.cjs"
   },
   "devDependencies": {
