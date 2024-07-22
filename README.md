@@ -1,4 +1,4 @@
-# employee-management
+# Weather API
 
 To install dependencies with a package manager (prefer `pnpm`)
 
