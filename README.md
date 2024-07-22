@@ -1,15 +1,19 @@
 # employee-management
 
-To install dependencies:
+To install dependencies with a package manager (prefer `pnpm`)
 
 ```bash
-bun install
+pnpm install
 ```
 
-To run:
+Need to build first in order to run:
 
 ```bash
-bun run src/app.ts
+# build step
+pnpm run build
+
+# run with node.js
+pnpm run serve:node
 ```
 
-This project was created using `bun init` in bun v1.1.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Checkout [package.json](package.json) for more scripts.
