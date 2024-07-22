@@ -1,5 +1,5 @@
 {
-  "name": "employee-management",
+  "name": "Weather API",
   "module": "src/app.ts",
   "type": "module",
   "scripts": {
