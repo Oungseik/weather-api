@@ -21,7 +21,7 @@ router.post("/register", async (c) => {
     );
     let hash = yield* Hashing.pipe(E.andThen((h) => h.hash(body.password)));
     yield* CreateEmployee.pipe(E.andThen((srv) => srv.create({ ...body, password: hash })));
-    return c.json({ message: "successfully registered" });
+    return c.json({ message: "successfully registered" }, 201);
   });
 
   let runnable = program.pipe(
@@ -61,4 +61,3 @@ router.post("/login", async (c) => {
 });
 
 export { router as authRouter };
-

@@ -7,6 +7,7 @@ import dotenv from "dotenv";
 import { config } from "./config";
 import { checkHealthRouter } from "./routers/check_health";
 import { authRouter } from "./routers/auth";
+import { weatherRouter } from "./routers/weather";
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ app.use(logger());
 
 app.route("/", checkHealthRouter);
 app.route("/api/v1/auth", authRouter);
+app.route("/api/v1/weather", weatherRouter);
 
 export default {
   fetch: app.fetch,
