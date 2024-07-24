@@ -1,3 +1,3 @@
 export * from "./hashing";
-export * from "./employee";
+export * from "./user";
 export * from "./token";

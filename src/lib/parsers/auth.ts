@@ -1,7 +1,7 @@
 import { Schema as S } from "@effect/schema";
 
 export const RegisterIn = S.Struct({
-  username: S.String.pipe(S.nonEmpty()),
+  name: S.String.pipe(S.nonEmpty()),
   email: S.String.pipe(
     S.pattern(/^(?!\.)(?!.*\.\.)([A-Z0-9_+-.]*)[A-Z0-9_+-]@([A-Z0-9][A-Z0-9-]*\.)+[A-Z]{2,}$/i),
   ),
